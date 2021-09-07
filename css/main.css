@@ -1,0 +1,208 @@
+body{ margin: 0; }
+.head{
+	background: #090909;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+}
+.container{
+	width: 80%;
+	max-width: 65em;
+	margin: 0 auto;
+}
+ul{
+	position:relative; left:-30%; float:right; width:auto;
+}
+.ml-auto{
+	left: 0%;
+}
+li{
+	display: inline-block;
+	margin-right: 40px;
+	position: relative;
+	left: 30%;
+}
+li a{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+li a:hover{
+	color: #000;
+}
+.navbar-brand{
+	position:relative;
+}
+.fa-globe{
+	color: white;
+	position: relative;
+	left: 50%;
+}
+.fa-globe:hover{
+	color: #777;
+}
+.carousel-inner{
+	height: 500px;
+}
+@media (min-width: 1100px){
+	.carousel-inner img{
+		width: 100%;
+	}
+}
+.carousel-caption{
+	position: absolute;
+	size: cover;
+	top: 52%;
+	transform: translateY(-80%);
+	text-shadow: 1px 1px 10px #999;
+}
+@media (max-width: 450px){
+	.carousel-caption .display-2{
+		font-size: 3em;
+	}
+}
+.jumbotron{
+	padding: 1.2em;
+	border-radius: 0;
+	background: gray;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.padding{
+	padding-bottom: 2em;
+}
+.card{
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+.card .btn{
+	display: inline-block;
+	text-decoration: none;
+	color: var(--clr-text, #fff);
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: .5em 1.25em;
+	background: var(--clr-accent, #000);
+	border-radius: .25em;
+	transition: transform 250em ease-in-out,opacity 250em linear;
+	--clr-accent: #4D4D4D;
+}
+.card .btn:hover,.btn.focus{
+	transform: scale(1.1);
+	opacity: .9;
+	--clr-text: #000;
+}
+.alert{
+	width: 75%;
+	margin: 0 auto;
+	padding-top: 2em;
+}
+.alert hr{
+	border-top: 2px solid #000;
+	width: 95%;
+	margin-top: 0.3em;
+	margin-bottom: 1em;
+}
+
+.fa-address-card{ color: #314863 }
+.fa-user{ color: #314863 }
+
+.fa-address-card, .fa-user{
+	font-size: 4em;
+	margin: 1em;
+}
+
+#fixed{
+	height: 300px;
+	border-top: 4px;
+	border-bottom: 4px;
+	background: url("../img/2nd_plan.png") no-repeat center center fixed;
+	background-blend-mode: multiply;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+
+#fixed .display-4{
+	color: #fff;
+	padding-top: 1.2em;
+}
+@media (max-width: 750px){
+	.display-4{
+		font-size: 2.3em;
+	}
+	.card{
+		margin-top: 2em;
+	}
+}
+
+.social a{
+	font-size: 5em;
+}
+footer{
+	background-color: #3f3f3f;
+	padding-top: 50px;
+	border-top: 4px;
+	color: white;
+}	
+.contact_title{
+	font-size: clamp(3rem, calc(5vw+1rem), 5rem);
+	line-height: 1.5;
+	color: #fff;
+	text-shadow: 0 0 .2em rgba(#000, .2);
+}
+.contact{
+	padding: 3em;
+	border-radius: 1em;
+	margin-bottom: 3em;
+	text-align: center;
+}
+.contact .contact_description{
+	font-size: 1.5em;
+	line-height: 1;
+	color: #fff;
+	margin: 0;
+}
+.contact a{
+	margin: -0.5em 0 0 0;
+}
+@media(min-width: 45em){
+	.contact{
+		margin-top: 1em;
+		text-align: right;
+	}
+	.contact a{
+		float: left;
+	}
+}
+.wss, .inst, .gmail{
+	background: radial-gradient(var(--clr-inner, #8C8C8C), var(--clr-outer, #3F3F3F));
+}
+.fa-whatsapp{ color: #6FFF75 } 
+.fa-phone-square-alt{ color: #D9D9D9 }
+.fa-envelope{ 
+	background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  	-webkit-background-clip: text;
+  	background-clip: text;
+  	color: transparent;
+  	-webkit-text-fill-color: transparent;
+}
+.fa-whatsapp:hover, .fa-phone-square-alt:hover{
+	color: #fff;
+	transform: scale(1.2);
+}
+.fa-envelope:hover{
+ 	background: conic-gradient(from -45deg, #fff 110deg, #fff 90deg 180deg, #fff 180deg 270deg, #fff 270deg) 73% 55%/150% 150% no-repeat;
+  	-webkit-background-clip: text;
+  	background-clip: text;
+  	color: transparent;
+  	-webkit-text-fill-color: transparent;
+  	transform: scale(1.2);
+ }

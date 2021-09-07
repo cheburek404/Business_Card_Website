@@ -1,0 +1,55 @@
+body{ margin: 0; }
+.head{
+  background: #090909;
+}
+.hero{
+  color: white;
+  text-align: center;
+  padding:16em 0;
+  background:#222;
+  --clr-accent: #faa700;
+}
+@media(max-width: 600px){
+  .hero{
+    padding: 17.5em 0;
+  }
+}
+@supports(background-blend-mode: multiply){
+  .hero{
+    background: url(../img/cubes.jpg), 
+     radial-gradient(#999, #111);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+h1,h2,h3,p{ margin:0; }
+.primary-title{
+  font-size: 4rem;
+  font-size: clamp(2rem, calc(4vw + 1rem), 4.5rem);
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+}
+.spacing>*+*{
+  margin-top: var(--spacer, 2rem)
+}
+.btn{
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr-text, #000);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .5em 1.25em;
+  background: var(--clr-accent, blue);
+  border-radius: .25em;
+  transition: transform 250em ease-in-out,opacity 250em linear;
+  --clr-accent: #E5E5E5;
+  --clr-text: #000;
+}
+.btn:hover,.btn.focus{
+  transform: scale(1.1);
+  opacity: .9;
+}

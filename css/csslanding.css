@@ -1,0 +1,221 @@
+body{ 
+	margin: 0;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;   
+}
+.head{
+	background: #090909;
+}
+ul{
+	position:relative; left:-30%; float:right; width:auto;
+}
+.ml-auto{
+	left: -1%;
+}
+li{
+	display: inline-block;
+	margin-right: 40px;
+	position: relative;
+	left: 30%;
+}
+
+li a{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+li a:hover{
+	color: #000;
+}
+.navbar-brand{
+	position:relative;
+}
+.fa-globe{
+	color: white;
+	position: relative;
+	left: 50%;
+}
+
+.fa-globe:hover{
+	color: #777;
+}
+.alert{
+	margin: 0 auto;
+	padding-top: 2em;
+}
+.alert hr{
+	border-top: 2px solid #000;
+	width: 100%;
+	margin-top: 0.3em;
+	margin-bottom: 1em;
+}
+
+.hero{
+	color: white;
+	text-align: center;
+	padding:10em 0;
+	background:#222;
+	--clr-accent: #faa700;
+}
+@supports(background-blend-mode: multiply){
+	.hero{
+		background: url(../img/Z.png), 
+		 radial-gradient(#999, #111);
+		background-blend-mode: multiply;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+	}
+}
+
+.primary-title{
+	font-size: 4rem;
+	font-size: clamp(2rem, calc(4vw + 1rem), 4.5rem);
+	line-height: 1;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.spacing>*+*{
+	margin-top: var(--spacer, 2rem)
+}
+.padding{
+	padding-bottom: 2em;
+}
+
+.container{
+	width: 80%;
+	max-width: 65em;
+	margin: 0 auto;
+}
+
+h1,h2,h3,p{ margin:0; }
+
+section	{ padding: 7em, 0; }
+
+.section-title{
+	text-align: center;
+	font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem); 
+	color: #17353d;
+}
+.product{
+	padding: 3em;
+	border-radius: 1em;
+	margin-bottom: 3em;
+	text-align: center;
+}
+.product .product_image{
+	margin: -0.5em 0 0 0;
+}
+@media(min-width: 45em){
+	.product{
+		text-align: left;
+		margin-bottom: 9em;	
+	}
+	.product .product_image{
+		float: right;
+	}
+}
+.product .product_title{
+	font-size: clamp(2.7rem, calc(5vw+1rem), 5.5rem);
+	line-height: 1;
+	color: #fff;
+	text-shadow: 0 0 .2em rgba(#000, .2);
+}
+.product .product_description{
+	font-size: 1.5em;
+	line-height: 1.2;
+	color: #000;
+	text-align: left;
+}
+.first{
+	background: radial-gradient(var(--clr-inner, #6dd5ed), var(--clr-outer, #2193b0));
+	--clr-accent: #32636E;
+}
+.second{
+	background: radial-gradient(var(--clr-inner, #faa700), var(--clr-outer, #e48d00));
+	--clr-accent: #7A5200;
+}
+.btn{
+	display: inline-block;
+	text-decoration: none;
+	color: var(--clr-text, #fff);
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: .5em 1.25em;
+	background: var(--clr-accent, blue);
+	border-radius: .25em;
+	transition: transform 250em ease-in-out,opacity 250em linear;
+}
+.btn:hover,.btn.focus{
+	transform: scale(1.1);
+	opacity: .9;
+}
+.first .product_image{
+	float: left;
+}
+
+.social a{
+	font-size: 5em;
+}
+footer{
+	background-color: #3f3f3f;
+	padding-top: 50px;
+	border-top: 4px;
+	color: white;
+}
+.contact_title{
+	font-size: clamp(3rem, calc(5vw+1rem), 5rem);
+	line-height: 1.5;
+	color: #fff;
+	text-shadow: 0 0 .2em rgba(#000, .2);
+}
+.contact{
+	padding: 3em;
+	border-radius: 1em;
+	margin-bottom: 3em;
+	text-align: center;
+}
+.contact .contact_description{
+	font-size: 1.5em;
+	line-height: 1;
+	color: #fff;
+}
+.contact a{
+	margin: -0.5em 0 0 0;
+}
+@media(min-width: 45em){
+	.contact{
+		margin-top: 1em;
+		text-align: right;
+	}
+	.contact a{
+		float: left;
+	}
+}
+.wss, .inst, .gmail{
+	background: radial-gradient(var(--clr-inner, #8C8C8C), var(--clr-outer, #3F3F3F));
+}
+.fa-whatsapp{ color: #6FFF75 } 
+.fa-phone-square-alt{ color: #D9D9D9 }
+.fa-envelope{ 
+	background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  	-webkit-background-clip: text;
+  	background-clip: text;
+  	color: transparent;
+  	-webkit-text-fill-color: transparent;
+}
+.fa-whatsapp:hover, .fa-phone-square-alt:hover{
+	color: #fff;
+	transform: scale(1.2);
+}
+.fa-envelope:hover{
+ 	background: conic-gradient(from -45deg, #fff 110deg, #fff 90deg 180deg, #fff 180deg 270deg, #fff 270deg) 73% 55%/150% 150% no-repeat;
+  	-webkit-background-clip: text;
+  	background-clip: text;
+  	color: transparent;
+  	-webkit-text-fill-color: transparent;
+  	transform: scale(1.2);
+ }
